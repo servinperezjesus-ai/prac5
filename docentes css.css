@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #f0f4f8;
+    color: #222;
+}
+
+/* ENCABEZADO */
+.encabezado {
+    position: relative;
+    text-align: center;
+    color: rgb(87, 100, 143);
+}
+
+.imagen-encabezado {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    filter: brightness(55%);
+}
+
+.texto-encabezado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.texto-encabezado h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.texto-encabezado p {
+    font-size: 1.1em;
+}
+
+/* MENÚ */
+.menu {
+    background-color: #2a9d8f;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    color: rgb(14, 13, 13);
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #3ec1ac;
+}
+
+.menu .activo {
+    background-color: #3ec1ac;
+}
+
+/* CONTENIDO */
+.contenido {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #2a9d8f;
+    margin-bottom: 30px;
+}
+
+/* TARJETAS DOCENTES */
+.tarjetas-docentes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: rgb(15, 13, 13);
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(231, 225, 225);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.tarjeta h3 {
+    margin: 10px 0 5px;
+    color: #2a9d8f;
+}
+
+.tarjeta p {
+    margin: 0;
+    color: #555;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* PIE */
+.pie {
+    background-color: #2a9d8f;
+    color: rgb(64, 66, 146);
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* MÓVIL */
+@media (max-width: 768px) {
+    .tarjeta {
+        width: 90%;
+    }
+
+    .texto-encabezado h1 {
+        font-size: 1.5em;
+    }
+}
