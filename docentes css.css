@@ -9,7 +9,7 @@ body {
 .encabezado {
     position: relative;
     text-align: center;
-    color: rgb(87, 100, 143);
+    color: rgb (33, 237,54);
 }
 
 .imagen-encabezado {
@@ -130,4 +130,5 @@ h2 {
     .texto-encabezado h1 {
         font-size: 1.5em;
     }
+
 }
